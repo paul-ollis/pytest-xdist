@@ -369,6 +369,7 @@ class DSession:
         rep = runner.TestReport(
             nodeid, (fspath, None, fspath), (), "failed", msg, "???"
         )
+        # Just a random comment.
         rep.node = worker
 
         self.config.hook.pytest_handlecrashitem(
